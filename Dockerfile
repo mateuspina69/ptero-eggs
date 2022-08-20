@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 RUN apk --update --no-cache add ca-certificates nginx
-RUN apk add php8 php8-xml php8-exif php8-fpm php8-session php8-soap php8-openssl php8-gmp php8-pdo_odbc php8-json php8-dom php8-pdo php8-zip php8-mysqli php8-sqlite3 php8-pdo_pgsql php8-bcmath php8-gd php8-odbc php8-pdo_mysql php8-pdo_sqlite php8-gettext php8-xmlreader  php8-bz2 php8-iconv php8-pdo_dblib php8-curl php8-ctype php8-phar php8-fileinfo php8-mbstring php8-tokenizer
+RUN apk add php7.4 php7.4-xml php7.4-exif php7.4-fpm php7.4-session php7.4-soap php7.4-openssl php7.4-gmp php7.4-pdo_odbc php7.4-json php7.4-dom php7.4-pdo php7.4-zip php7.4-mysqli php7.4-sqlite3 php7.4-pdo_pgsql php7.4-bcmath php7.4-gd php7.4-odbc php7.4-pdo_mysql php7.4-pdo_sqlite php7.4-gettext php7.4-xmlreader  php7.4-bz2 php7.4-iconv php7.4-pdo_dblib php7.4-curl php7.4-ctype php7.4-phar php7.4-fileinfo php8-mbstring php8-tokenizer
 
 RUN curl -sS https://getcomposer.org/installer -o composer-setup.php
 RUN /usr/bin/php8 composer-setup.php --install-dir=/usr/local/bin --filename=composer
